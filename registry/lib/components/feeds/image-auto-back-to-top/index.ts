@@ -14,8 +14,15 @@ export const component = defineComponentMetadata({
     forEachFeedsCard({
       added: card => {
         const scrollIntoView = (element: Element) => {
-          element?.scrollIntoView()
-          window.scrollBy({ top: -75 })
+          element?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'start'
+          })
+          window.scrollBy({
+            top: -75,
+            behavior: 'smooth'
+          })
         }
         const albums = dqa(card.element, '.bili-album')
         mutationObserve(albums, { childList: true, attributes: true, subtree: true }, records => {
