@@ -16,12 +16,6 @@ export const component = defineComponentMetadata({
         const scrollIntoView = (element: Element) => {
           element?.scrollIntoView({
             behavior: 'smooth',
-            block: 'nearest',
-            inline: 'start',
-          })
-          window.scrollBy({
-            top: -75,
-            behavior: 'smooth',
           })
         }
         const albums = dqa(card.element, '.bili-album')
