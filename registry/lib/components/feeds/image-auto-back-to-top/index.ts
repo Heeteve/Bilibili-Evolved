@@ -17,11 +17,11 @@ export const component = defineComponentMetadata({
           element?.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
-            inline: 'start'
+            inline: 'start',
           })
           window.scrollBy({
             top: -75,
-            behavior: 'smooth'
+            behavior: 'smooth',
           })
         }
         const albums = dqa(card.element, '.bili-album')
