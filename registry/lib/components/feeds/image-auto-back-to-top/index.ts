@@ -43,7 +43,7 @@ export const component = defineComponentMetadata({
             const isImagePreviewEntered =
               hasAlbumPreviewNode(record.addedNodes) || isAlbumVisible() === true
             if (isImagePreviewEntered) {
-            //   const controlBar = dq(card.element, '.bili-album__watch__control')
+              //   const controlBar = dq(card.element, '.bili-album__watch__control')
               scrollIntoView(card.element)
               console.log('imagePreviewEntered')
             }
