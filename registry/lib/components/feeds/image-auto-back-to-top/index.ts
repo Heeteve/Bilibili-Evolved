@@ -43,8 +43,8 @@ export const component = defineComponentMetadata({
             const isImagePreviewEntered =
               hasAlbumPreviewNode(record.addedNodes) || isAlbumVisible() === true
             if (isImagePreviewEntered) {
-              const controlBar = dq(card.element, '.bili-album__watch__control')
-              scrollIntoView(controlBar)
+            //   const controlBar = dq(card.element, '.bili-album__watch__control')
+              scrollIntoView(card.element)
               console.log('imagePreviewEntered')
             }
           })
@@ -58,8 +58,8 @@ export const component = defineComponentMetadata({
             ) {
               return
             }
-            const controlBar = dq(card.element, '.bili-album__watch__control')
-            scrollIntoView(controlBar)
+            // const controlBar = dq(card.element, '.bili-album__watch__control')
+            scrollIntoView(card.element)
             console.log('imagePreviewSwitched')
           })
         })
